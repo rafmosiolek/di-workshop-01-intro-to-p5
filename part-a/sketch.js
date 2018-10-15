@@ -5,8 +5,14 @@ var r = 255
 var g = 80
 var b = 0
 
+var a = 10;
+var b = 255;
+var c = 10;
+
+var name = "Liam";
+
 function setup() {
   createCanvas(400, 400)
 
-  background(r, g, b)
+  background(a, b, c)  
 }

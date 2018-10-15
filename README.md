@@ -125,9 +125,15 @@ var b = 0
 
 **What might these lines do?**
 
+They store information under the decalred names.
+
 **What happens if you change the numbers?**
 
+It will change the colour of the square, by calling the background function which uses these variables as parameters.
+
 **What numbers are allowed / What numbers have an effect?**
+
+0 - 255
 
 Look at this line:
 
@@ -137,14 +143,20 @@ createCanvas(400, 400)
 
 **What does createCanvas do?**
 
+Creates a square of 400pixels width and height.
+
 **What happens if you change the numbers?**
+It would change the sizes of the square.
 
 **What numbers are allowed/what numbers have an effect?**
+Positive numbers.
 
 **What happens if you add/remove a number?**
+createCanvas function requires two parameters (width and height). By removing one or two parameters, shape is still being created with default values of 100px, but it cannot be coloured.
 
 **Can you guess what the `function setup() {` part does? What happens if you
 change the name of setup?**
+Setup function is predefined in P5 library and lets the browser know to use the library and execute functions inside it. If we'd change the name, it wouldn't work.
 
 Look at this line:
 
@@ -153,13 +165,18 @@ background(r, g, b)
 ```
 
 **What does background do?**
+Background is a function that takes three parameters (numbers) and sets the background colour for the shape we created with createCanvas function. Parameters are numbers between 0-255, we store them in r,g and b variables.
 
 **What happens if you change the order of the letters in background? What does
 this tell you about how the computer uses them?**
 
+It would change the colour of the shape. Function background takes 3 parameters in order: red, green and blue. 
+
 **What happens if you change the number of letters?**
+The P5 library will throw an error about undefined variables. The function takes three parameters, if anything is declared it might throw an err.
 
 **What happens if you change the letters for different ones?**
+The function won't be called properly and the error will be thrown unless we declare these new variables. 
 
 # Sketch B
 
