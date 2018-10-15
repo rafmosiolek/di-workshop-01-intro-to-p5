@@ -200,11 +200,14 @@ function setup() {
 ```
 
 **What does setup do?**
+Starts the P5 library and executes the functions from the inside.
 
 **What do `{` `}` mean? What happens if you remove one?**
+Specify the code blocks.
 
 **What do the numbers in `background(0, 0, 0)` do? What happens when you change
 them? How is this different from Sketch A?**
+Background function takes three numbers as parameters, responsible for colours in RGB scale. It's no different to Sketch A. `background(0, 0, 0)` gives black background to a created canvas.
 
 Now look at these lines:
 
@@ -216,6 +219,7 @@ function draw() {
 ```
 
 **What does draw do?**
+Draw function allows to draw lines with mouse.
 
 Now look at:
 
@@ -224,6 +228,7 @@ fill(255, 0, 0)
 ```
 
 **What do these numbers do? What happens when you change them?**
+It fills the mouse marker that draws the shapes with the draw function. It takes three numbers as parameters, colouring it in RGB scale.
 
 **What does fill mean? What happens if you change it to stroke?**
 
